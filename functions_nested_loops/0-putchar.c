@@ -1,4 +1,3 @@
-#include "_putchar"
 /**
  * main - Entry point
  *
