@@ -1,4 +1,4 @@
-#include "0-putchar.c"
+#include "_putchar"
 /**
  * main - Entry point
  *
@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char *sh = "Holberton";
+	char *sh = "0-putchar.c";
 
 	while (*sh)
 	{
