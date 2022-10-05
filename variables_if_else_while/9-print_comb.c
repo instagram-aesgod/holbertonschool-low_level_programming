@@ -1,5 +1,3 @@
-#include "holbertonschool-low_level_programming"
-
 /**
  * times_table - Prints the 9 times table, starting with 0.
  */
