@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * _strlen - this function change the initial.
- * @s: this is a parameter to change.
- * Return: len
+ *_strlen- counts string exccept \0
+ *@s: checked
+ *Return: i
  */
 int _strlen(char *s)
 {
-	int len;
+	int i;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; ++i)
 	{
-		len = len + 1;
-		s = s + 1;
+		;
 	}
-	return (len);
+	return (i);
+
 }
