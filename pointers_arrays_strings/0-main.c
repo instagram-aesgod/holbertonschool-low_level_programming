@@ -1,18 +1,21 @@
-#include "main.h"
 #include <stdio.h>
 
+void swap_int(int *, int *);
+
 /**
- * main - check the code 
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    int n;
+	int a;
+	int b;
 
-    n = 402;
-    printf("n=%d\n", n);
-    reset_to_98(&n);
-    printf("n=%d\n", n);
-    return (0);
+	a = 98;
+	b = 42;
+	printf("%d, %d\n", a, b);
+	swap_int(&a, &b);
+	printf("%d, %d\n", a, b);
+	return (0);
 }
