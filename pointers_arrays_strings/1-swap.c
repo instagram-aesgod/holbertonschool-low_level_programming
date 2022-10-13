@@ -3,12 +3,21 @@
  * @n: swap the values
  */
 void swap_int(int *a, int *b)
+
 {
-	 int a, b;
-    printf("a=98 ");
-    scanf("%d", &a);
-    printf("b=42 ");
-    scanf("%d", &b);
-    swap(a, b);
-    getch();
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+int main()
+{
+	int a, b;
+	_putchar(" 98 ");
+	scanf("%d", &a);
+	_putchar("\n 42 ");
+	scanf("%d", &b);
+	swap(&a, &b);
+	_putchar("n: x = %d, y = %d", a, b);
+	return 0;
 }
