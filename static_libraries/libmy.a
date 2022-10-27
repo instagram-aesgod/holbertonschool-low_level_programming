@@ -1,0 +1,29 @@
+/*
+ * Create a static librairies - include functions
+ * @n : include functions in a librairie
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <main.h>
+
+#define MAX_INPUT 20
+
+int main(int argc, char **argv)
+{
+     char input[MAX_INPUT];
+     double angle;
+
+     printf("Give me an angle (in radians) ==> ");
+        if (!fgets(input, MAX_INPUT, stdin)) {
+             perror("an error occurred.\n");
+        }
+
+        angle = strtod(input, NULL);
+
+        printf("sin(%e) = %e\n", angle, sin(angle));
+        printf("cos(%e) = %e\n", angle, cos(angle));
+        printf("tan(%e) = %e\n", angle, tan(angle));
+
+        return 0;
+}
